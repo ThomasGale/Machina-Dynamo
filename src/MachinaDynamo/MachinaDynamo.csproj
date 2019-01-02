@@ -371,12 +371,6 @@
     <None Include="Resources\MachinaDynamo.Robots.RobotCreate.Small.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Machina\src\Machina\Machina.csproj">
-      <Project>{15951838-f9d6-4988-a103-b7c72bfe81a2}</Project>
-      <Name>Machina</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Resources\MachinaDynamo.Actions.Acceleration.Large.png" />
     <Content Include="Resources\MachinaDynamo.Actions.Acceleration.Small.png" />
     <Content Include="Resources\MachinaDynamo.Actions.AccelerationTo.Large.png" />
@@ -421,6 +415,12 @@
     <Content Include="Resources\MachinaDynamo.Robots.Create.Small.png" />
     <Content Include="Resources\MachinaDynamo.Robots.Logger.Large.png" />
     <Content Include="Resources\MachinaDynamo.Robots.Logger.Small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Machina.NET\src\Machina\Machina.csproj">
+      <Project>{15951838-f9d6-4988-a103-b7c72bfe81a2}</Project>
+      <Name>Machina</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
