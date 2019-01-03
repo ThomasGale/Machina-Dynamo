@@ -9,6 +9,22 @@
             All possible Actions.
             </summary>
         </member>
+        <member name="M:MachinaDynamo.Actions.DEDParametersTo(System.Double,System.Double)">
+            <summary>
+            Set the Parmaters for a DED process
+            </summary>
+            <param name="travelSpeed">DED process travel speed override (mm/s)</param>
+            <param name="materialFlow">DED process material flow rate (mm/s)</param>
+            <returns name="Action">DED ParametesTo Action</returns>
+        </member>
+        <member name="M:MachinaDynamo.Actions.DEDTo(Autodesk.DesignScript.Geometry.Plane,System.Int32)">
+            <summary>
+            DED process, performs a compound absolute transformation to target Plane. The device's new absolute position and orientation will be those of the Plane.
+            </summary>
+            <param name="plane">Target Plane to transform to</param>
+            <param name="mode">DED motion mode (Start = 0, Mid = 1 (default), End = 2)</param>
+            <returns name="Action">DED Action</returns>
+        </member>
         <member name="M:MachinaDynamo.Actions.WriteDigital(System.String,System.Boolean,System.Boolean)">
             <summary>
             Activate/deactivate digital output. 
