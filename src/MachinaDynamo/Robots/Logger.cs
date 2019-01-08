@@ -37,7 +37,12 @@ namespace MachinaDynamo
         private static bool isEventHandlerRegistered = false;
 
         
-
+        /// <summary>
+        /// Create a logger (can update periodically)
+        /// </summary>
+        /// <param name="level"></param>
+        /// <param name="maxMessages"></param>
+        /// <returns></returns>
         [CanUpdatePeriodically(true)]
         public static List<string> Logger(int level = 3, int maxMessages = 10)
         {

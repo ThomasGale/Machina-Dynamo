@@ -138,7 +138,8 @@
     <Compile Include="Actions\SetWorkplaneRef.cs" />
     <Compile Include="Actions\SetToolRef.cs" />
     <Compile Include="Actions\DEDParameters.cs" />
-    <Compile Include="Actions\DED.cs" />
+    <Compile Include="Actions\DEDSolvedTransform.cs" />
+    <Compile Include="Actions\SolvedTransform.cs" />
     <Compile Include="Actions\WriteDigital.cs" />
     <Compile Include="Actions\WriteAnalog.cs" />
     <Compile Include="Actions\Wait.cs" />
