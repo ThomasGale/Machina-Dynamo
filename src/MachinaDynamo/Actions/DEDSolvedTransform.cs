@@ -39,11 +39,10 @@ namespace MachinaDynamo
         /// <returns name="Action">DED Action</returns>
         public static MAction DEDSolvedTransformTo(Plane plane, int mode = 1, int cf1 = 0, int cf4 = 0, int cf6 = 0, int cfx = 0) =>
             new ActionDEDSolvedTransform(
-                (ActionDEDSolvedTransform.DEDMode)mode,
                 plane.Origin.X, plane.Origin.Y, plane.Origin.Z,
                 plane.XAxis.X, plane.XAxis.Y, plane.XAxis.Z, 
                 plane.YAxis.X, plane.YAxis.Y, plane.YAxis.Z,
-                cf1, cf4, cf6, cfx);
+                cf1, cf4, cf6, cfx, (ActionDEDSolvedTransform.DEDMode)mode);
 
     }
 }
